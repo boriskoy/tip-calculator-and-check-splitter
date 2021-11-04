@@ -1,0 +1,25 @@
+<body>
+
+<head>
+<script src="tip-calculator.js"></script>
+</head>
+  <h1>Tip Calculator and Check Splitter</h1>
+
+  <!--totalWithoutTip-->
+  <input type="number" name="totalWithoutTip" id="total-without-tip" placeholder="total before tip">
+
+  <!--tipPercent-->
+  <br><input type="number" name="tipPercent" id="tip-percent" placeholder="tip % you want to give"><br>
+  
+<p>Splitting the meal?</p>
+<!--howManyDiners-->
+<input type="number" name="how-many-diners" placeholder="how many eaters?" id="how-many-diners"">
+<br>
+<button onclick="calculateTotalWithTip(
+
+  document.getElementById('total-without-tip').value,
+  document.getElementById('tip-percent').value,
+  document.getElementById('how-many-diners').value)">Calculate</button>
+
+<p id="total-with-tip">Total</p>
+</body>
